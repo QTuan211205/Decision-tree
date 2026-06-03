@@ -59,7 +59,3 @@ $$\text{Nếu } \max(P(\text{class} \mid X)) < 0.70 \implies \text{Gán nhãn} =
 * **Đánh giá hiệu năng thực tế:** Khi đưa dữ liệu của lớp `brainfuck` (một ngôn ngữ lập trình không nằm trong 32 lớp huấn luyện chính thống) vào tập kiểm thử, hệ thống ghi nhận tỷ lệ chặn đứng mẫu lạ cực kỳ ấn tượng.
 * Mô hình **Decision Tree chặn thành công 68.00%** và mô hình nâng cao **LightGBM chặn đứng thành công 72.00%** mẫu lạ.
 * **Biện luận kỹ thuật:** Việc LightGBM đạt tỷ lệ chặn Unknown cao hơn hẳn (72.00%) ở tập dữ liệu lớn là nhờ mô hình đã học được phân bổ ranh giới các ngôn ngữ đích rất chặt chẽ. Khi gặp một tệp văn bản có cú pháp hoàn toàn dị biệt, xác suất phân bổ nhãn của LightGBM bị phân tán đều hoặc giữ ở mức thấp (dưới 0.70), kích hoạt bộ lọc từ chối phân loại bừa bãi. Cơ chế này đảm bảo tính ổn định và an toàn thông tin cho hệ thống khi ứng dụng vào thực tế.
-
----
-
-## 5. Link google drive raw datasets: https://drive.google.com/file/d/1DnrBHw1oh6J5KZvP_uhRkGVCTRmtAz_L/view?usp=drive_link
